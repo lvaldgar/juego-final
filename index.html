@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--siempre es asi-->
+  <link rel="stylesheet" href="styles.css">
+  <!--conexión con el css-->
+</head>
+<body>
+  <div id="inicio">
+    <div class="image">
+      <img src="https://i.pinimg.com/736x/1c/b4/81/1cb481baccd7b1b1277cfd4b42fb75ad.jpg">
+   </div>
+    <h3>BIENVENIDO AL JUEGO DE MEMORY</h3>
+    <p>Al iniciar el juego tendrás 20 segundos para memorizar la posición de las parejas de animales.</p>
+    <p> Pasado este tiempo tendrás 1 minuto para encontrar todas las parejas de animales.</p>
+    <button id="start-button">Empezar</button>
+    <!--El botón de inicio (start-button) tiene un identificador para facilitar su manipulación desde JavaScript.-->
+  </div>
+
+  <div id="juego" style="display:none;">
+    <div id="tablero" class="tablero"></div>
+    <div id="mensaje"></div>
+  </div>
+
+  <script src="juego.js"></script>
+</body>
+</html>
+

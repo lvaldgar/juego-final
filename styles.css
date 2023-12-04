@@ -1,0 +1,55 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  overflow: hidden; /* Evita el desplazamiento en la pantalla */
+}
+
+#inicio, #juego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 100% del alto de la ventana */
+}
+
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(5, 100px); /* Fijar el ancho de los cuadros */
+  gap: 10px;
+  height: auto;
+  margin: 5% auto; /* Ajuste para centrar horizontalmente */
+  justify-content: center; /* Centra horizontalmente el contenido del tablero */
+  background: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente sobre la imagen */
+  padding: 20px; /* Añade un espacio alrededor del tablero */
+}
+
+.cuadro {
+  width: 100px; /* Fijar el ancho de los cuadros */
+  height: 100px; /* Fijar el alto de los cuadros */
+  background-color: orange;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-size: 18px;
+  color: green;
+}
+
+#juego {
+  background-color: antiquewhite;
+   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+  background-position: center; /* Centra la imagen */
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
